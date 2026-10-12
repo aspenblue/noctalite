@@ -12,17 +12,16 @@ image-version: latest
 
 modules:
 
-  - from-file: 20-system/common/system.yml
-  - from-file: 30-apps/common/apps.yml
-  - from-file: 60-shell/hyprite/hyprland-shell.yml
-  - from-file: 60-shell/common/noctalia.yml
-  - from-file: 60-shell/common/noctaliagreeter.yml
-  - from-file: 60-shell/hyprite/noctalia-hyprland-connector.yml
-  - from-file: 70-desktop/common/apps.yml
-  - from-file: 70-desktop/common/foot.yml
-  - from-file: 70-desktop/common/xfce/xfce-apps.yml
-  - from-file: 70-desktop/common/xfce/xfce-noctalia-connector.yml
-  #- from-file: 70-desktop/hyprite/xfce-hyprland-connector.yml
+  - from-file: ../modules/20-system/common/system.yml
+  - from-file: ../modules/30-apps/common/apps.yml
+  - from-file: ../modules/60-shell/hyprite/hyprland-shell.yml
+  - from-file: ../modules/60-shell/common/noctalia.yml
+  - from-file: ../modules/60-shell/common/noctaliagreeter.yml
+  - from-file: ../modules/60-shell/hyprite/noctalia-hyprland-connector.yml
+  - from-file: ../modules/70-desktop/common/apps.yml
+  - from-file: ../modules/70-desktop/common/foot.yml
+  - from-file: ../modules/70-desktop/common/xfce/xfce-apps.yml
+  - from-file: ../modules/70-desktop/common/xfce/xfce-noctalia-connector.yml
 
 
   # -----------------------------------------------
