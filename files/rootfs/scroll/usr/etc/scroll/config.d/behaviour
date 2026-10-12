@@ -1,0 +1,11 @@
+# Default config for scroll
+# Read `man 5 scroll` for a complete reference.
+
+for_window [app_id="^(org.gnome.Calculator|gnome-calculator|galculator)$"] floating enable
+
+# Переместить окно в соседнюю колонку и добавить в стопку
+bindsym $mod+Alt+Left move left nomode
+bindsym $mod+Alt+Right move right nomode
+
+bindsym $mod+bracketleft set_mode h
+bindsym $mod+bracketright set_mode v

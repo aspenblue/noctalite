@@ -1,0 +1,56 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Hyprland repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - lionheartp/Hyprland
+
+
+  # -----------------------------------------------
+  # Hyprland packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        # Hyprland
+        - hyprland
+        - hyprpicker
+        - hypridle
+        - hyprlock
+        # - hyprpolkitagent             # noctalia polkit agent used
+        - hyprland-guiutils
+
+        # Hyprland support components
+        - brightnessctl
+        - playerctl
+
+        # UWSM
+        - hyprland-uwsm
+
+        # Hyprland portals
+        # - xdg-desktop-portal          # installed in base-main
+        - xdg-desktop-portal-hyprland
+        # - xdg-desktop-portal-gtk      # installed in base-main  
+
+        - dmenu-wayland  
+
+        - gnome-keyring             # Keyring
+
+
+  # -----------------------------------------------
+  # Hyprland - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/hyprland
+        destination: /

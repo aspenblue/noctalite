@@ -1,0 +1,12 @@
+# Default config for scroll
+# Read `man 5 scroll` for a complete reference.
+
+default_border pixel 2
+default_floating_border pixel 2
+
+default_decoration dim true dim_color #00000030
+
+gaps inner 8
+gaps outer 8
+
+default_decoration border_radius 8

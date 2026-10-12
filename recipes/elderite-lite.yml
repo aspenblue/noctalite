@@ -1,0 +1,31 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+version: 1
+
+name: elderite-lite
+
+description: "Personal Fedora Atomic image based on Universal Blue, with SwayFx, Noctalia and Noctalia Greeter."
+
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+
+modules:
+
+  - from-file: 20-system/common/system.yml
+  - from-file: 30-apps/common/apps.yml
+  - from-file: 60-shell/elderite/scroll-shell.yml
+  - from-file: 60-shell/common/noctalia.yml
+  - from-file: 60-shell/common/noctaliagreeter.yml
+  - from-file: 60-shell/elderite/noctalia-scroll-connector.yml
+  - from-file: 70-desktop/common/apps.yml
+  - from-file: 70-desktop/common/foot.yml
+  - from-file: 70-desktop/common/xfce/xfce-apps.yml
+  - from-file: 70-desktop/common/xfce/xfce-noctalia-connector.yml
+
+
+  # -----------------------------------------------
+  # Sign image
+  # -----------------------------------------------
+
+  - type: signing
