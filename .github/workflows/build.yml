@@ -27,14 +27,14 @@ jobs:
     strategy:
       matrix:
         recipe:
-          #- hyprite/hyprite
-          #- hyprite/hyprite-air
-          #- hyprite/hyprite-plus
-          - hyprite/hyprite-lite
-          #- swanite/swanite
-          - swanite/swanite-lite
-          #- elderite/elderite
-          - elderite/elderite-lite
+          #- hyprite
+          #- hyprite-air
+          #- hyprite-plus
+          - hyprite-lite
+          #- swanite
+          - swanite-lite
+          #- elderite
+          - elderite-lite
 
     name: Build ${{ matrix.recipe }}
     runs-on: ubuntu-latest
