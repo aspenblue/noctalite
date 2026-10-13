@@ -4,7 +4,7 @@
 modules:
 
   # -----------------------------------------------
-  # webapp-manager repository
+  # Webapp-manager repository
   # -----------------------------------------------
 
   - type: dnf
@@ -71,3 +71,13 @@ modules:
 
           # Apps
           - io.github.kolunmi.Bazaar      # Магазин приложений
+
+
+  # -----------------------------------------------
+  # Desktop config
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/mate
+        destination: /          
