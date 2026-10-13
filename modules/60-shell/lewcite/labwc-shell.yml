@@ -16,7 +16,7 @@ modules:
         - labwc-tweaks
         
         # Terminal
-        - sakura
+        - mate-terminal
 
         # Support components
         - brightnessctl
@@ -47,14 +47,4 @@ modules:
   - type: files
     files:
       - source: rootfs/labwc
-        destination: /
-
-
-  # -----------------------------------------------
-  # Foot - configuration
-  # -----------------------------------------------
-
-  - type: files
-    files:
-      - source: rootfs/foot
-        destination: /         
+        destination: /       

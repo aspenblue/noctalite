@@ -20,7 +20,7 @@ modules:
         - mate-calc                     # Калькулятор
         - pluma                         # Блокнот
         - eom                           # Изображения
-        - parole                        # Видео
+        - mpv                           # Видео
         # -                               # Камера
 
         # Office
