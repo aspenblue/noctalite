@@ -20,8 +20,8 @@ modules:
   - from-file: ../modules/60-shell/hyprite/noctalia-hyprland-connector.yml
   - from-file: ../modules/70-desktop/common/apps.yml
   - from-file: ../modules/70-desktop/common/foot.yml
-  - from-file: ../modules/70-desktop/common/mint/mint-apps.yml
-  - from-file: ../modules/70-desktop/common/mint/mint-noctalia-connector.yml
+  - from-file: ../modules/70-desktop/common/pantheon/pantheon-shell.yml
+  - from-file: ../modules/70-desktop/common/pantheon/pantheon-noctalia-connector.yml
   - from-file: ../modules/80-cleanup/common/apps-clean.yml
 
 

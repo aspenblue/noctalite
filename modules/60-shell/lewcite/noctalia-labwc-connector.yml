@@ -9,5 +9,5 @@ modules:
 
   - type: files
     files:
-      - source: rootfs/mint-noctalia-connector
+      - source: rootfs/noctalia-labwc-connector
         destination: /

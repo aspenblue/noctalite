@@ -28,6 +28,9 @@ modules:
         #- swayidle
         #- swaylock
 
+        # Terminal
+        - foot
+
         # SwayFX support components
         - brightnessctl
         - playerctl
@@ -58,3 +61,13 @@ modules:
     files:
       - source: rootfs/scroll
         destination: /
+
+
+  # -----------------------------------------------
+  # Foot - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/foot
+        destination: /         

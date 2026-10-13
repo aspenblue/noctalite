@@ -28,13 +28,15 @@ jobs:
       matrix:
         recipe:
           #- hyprite
-          #- hyprite-air
+          #- hyprite-basic
           #- hyprite-plus
           - hyprite-lite
           #- swanite
           - swanite-lite
           #- elderite
           - elderite-lite
+          #- lewcite
+          - lewcite-lite
 
     name: Build ${{ matrix.recipe }}
     runs-on: ubuntu-latest

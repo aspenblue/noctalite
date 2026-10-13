@@ -29,6 +29,9 @@ modules:
         # - hyprpolkitagent             # noctalia polkit agent used
         - hyprland-guiutils
 
+        # Terminal
+        - foot
+
         # Hyprland support components
         - brightnessctl
         - playerctl
@@ -54,3 +57,13 @@ modules:
     files:
       - source: rootfs/hyprland
         destination: /
+
+
+  # -----------------------------------------------
+  # Foot - configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/foot
+        destination: /         
