@@ -8,7 +8,7 @@ name: lewcite-lite
 description: "Personal Fedora Atomic image based on Universal Blue, with LabWC, Noctalia and Noctalia Greeter."
 
 base-image: ghcr.io/ublue-os/base-main
-image-version: latest
+image-version: 44
 
 modules:
 
@@ -22,6 +22,22 @@ modules:
   - from-file: ../modules/70-desktop/common/mate/mate-apps.yml
   - from-file: ../modules/70-desktop/common/mate/mate-noctalia-connector.yml
   - from-file: ../modules/80-cleanup/common/apps-clean.yml
+
+
+  # -----------------------------------------------
+  # OS details
+  # -----------------------------------------------
+
+  - type: os-release
+    properties:
+      ID: aspenblue-lewcite
+      ID_LIKE: fedora
+      NAME: "Aspenblue Lewcite"
+      PRETTY_NAME: "Aspenblue Lewcite - Fedora Atomic"
+      VERSION: "44"
+      VARIANT: "Lite Edition"
+      VARIANT_ID: lite
+      HOME_URL: "https://github.com/aspenblue/noctaline"
 
 
   # -----------------------------------------------

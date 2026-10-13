@@ -16,7 +16,7 @@ modules:
         - labwc-tweaks
         
         # Terminal
-        - foot
+        - sakura
 
         # Support components
         - brightnessctl
