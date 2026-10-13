@@ -22,6 +22,7 @@ modules:
   - from-file: ../modules/70-desktop/common/foot.yml
   - from-file: ../modules/70-desktop/common/xfce/xfce-apps.yml
   - from-file: ../modules/70-desktop/common/xfce/xfce-noctalia-connector.yml
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
 
 
   # -----------------------------------------------

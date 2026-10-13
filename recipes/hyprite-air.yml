@@ -22,6 +22,7 @@ modules:
   - from-file: ../modules/70-desktop/common/foot.yml
   - from-file: ../modules/70-desktop/common/pantheon/pantheon-shell.yml
   - from-file: ../modules/70-desktop/common/pantheon/pantheon-noctalia-connector.yml
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
 
 
   # -----------------------------------------------

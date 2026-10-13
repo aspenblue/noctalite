@@ -22,6 +22,7 @@ modules:
   - from-file: ../modules/70-desktop/common/foot.yml
   - from-file: ../modules/70-desktop/common/mint/mint-apps.yml
   - from-file: ../modules/70-desktop/common/mint/mint-noctalia-connector.yml
+  - from-file: ../modules/80-cleanup/common/apps-clean.yml
 
 
   # -----------------------------------------------
