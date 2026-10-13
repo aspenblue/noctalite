@@ -14,10 +14,7 @@ modules:
 
         # Basic
         - nautilus                        # Файлы
-        # - gnome-console                   # Терминал
-
-        - loupe               # Изображения
-        - showtime            # Видео
+        - gnome-console                   # Терминал
       
 
   # -----------------------------------------------

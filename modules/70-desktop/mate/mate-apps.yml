@@ -12,6 +12,7 @@ modules:
       copr:
         - kylegospo/webapp-manager
 
+
   # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
@@ -22,28 +23,18 @@ modules:
       packages:
 
         # Basic
-        - thunar                        # Файлы
-        # - xfce4-terminal                # Терминал
-        - xarchiver                     # Архивы
-        - galculator                    # Калькулятор
-        - mousepad                      # Блокнот
-        # -                               # Часы и будильник
-        # - orage                         # Календарь
-        # -                               # Задачи
-        # -                               # Иконки
-        # -                               # Карты
-        # - sticky                        # Заметки
-
-        # Media
-        - ristretto                     # Изображения
-        - audacious                     # Музыка
-        - audacious-plugins
-        - parole                        # Видео
-        - cheese                        # Камера
+        - nemo                          # Файлы
+        - cinnamon-translations         # Файлы
+        - gnome-terminal                # Терминал
+        - engrampa                      # Архивы
+        - mate-calc                     # Калькулятор
+        - pluma                         # Блокнот
+        - eom                           # Изображения
+        - mpv                           # Видео
+        # -                               # Камера
 
         # Office
-        - xreader                       # PDF, DJVu
-        # - atril                         # PDF, DJVu
+        - atril                         # PDF, DJVu
 
         # Web
         - webapp-manager                # Веб-приложения
@@ -54,7 +45,7 @@ modules:
         # -                               # Шрифты
         # -                               # RDP
         # - mate-system-tools             # Использование диска
-        # - mate-system-monitor           # Мониторинг системы
+        - mate-system-monitor           # Мониторинг системы
       
 
   # -----------------------------------------------

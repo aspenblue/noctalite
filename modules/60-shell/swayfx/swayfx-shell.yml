@@ -4,21 +4,31 @@
 modules:
 
   # -----------------------------------------------
-  # Labwc packages
+  # SwayFX repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      copr:
+        - swayfx/swayfx
+
+
+  # -----------------------------------------------
+  # SwayFx packages
   # -----------------------------------------------
 
   - type: dnf
     install:
       install-weak-deps: false
       packages:
-        # Labwc
-        - labwc
-        - labwc-tweaks
-        
-        # Terminal
-        - mate-terminal
+        # SwayFX
+        - swayfx
 
-        # Support components
+        # Sway ecosystem
+        - swayidle
+        - swaylock
+
+        # SwayFX support components
         - brightnessctl
         - playerctl
 
@@ -26,12 +36,12 @@ modules:
         # - uwsm
 
         # Wayland support
-        - xdg-desktop-portal
+        # - xdg-desktop-portal          # installed in base-main
         - xdg-desktop-portal-wlr
-        - wl-clipboard
+        # - wl-clipboard                # installed in base-main
 
         # XWayland
-        - xorg-x11-server-Xwayland
+        # - xorg-x11-server-Xwayland    # installed in base-main
 
         # Launcher
         - dmenu-wayland  
@@ -41,10 +51,10 @@ modules:
 
 
   # -----------------------------------------------
-  # Labwc configuration
+  # SwayFX - configuration
   # -----------------------------------------------
 
   - type: files
     files:
-      - source: rootfs/labwc
-        destination: /       
+      - source: rootfs/swayfx
+        destination: /        

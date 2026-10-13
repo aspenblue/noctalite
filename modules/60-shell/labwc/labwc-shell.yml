@@ -1,0 +1,47 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  # -----------------------------------------------
+  # Labwc packages
+  # -----------------------------------------------
+
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        # Labwc
+        - labwc
+        - labwc-tweaks
+
+        # Support components
+        - brightnessctl
+        - playerctl
+
+        # UWSM
+        # - uwsm
+
+        # Wayland support
+        - xdg-desktop-portal
+        - xdg-desktop-portal-wlr
+        - wl-clipboard
+
+        # XWayland
+        - xorg-x11-server-Xwayland
+
+        # Launcher
+        - dmenu-wayland  
+
+        # Authentication
+        - gnome-keyring
+
+
+  # -----------------------------------------------
+  # Labwc configuration
+  # -----------------------------------------------
+
+  - type: files
+    files:
+      - source: rootfs/labwc
+        destination: /       

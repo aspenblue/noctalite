@@ -4,13 +4,13 @@
 modules:
 
   # -----------------------------------------------
-  # SwayFX repository
+  # Terra repository
   # -----------------------------------------------
 
   - type: dnf
     repos:
-      copr:
-        - swayfx/swayfx
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 
 
   # -----------------------------------------------
@@ -21,15 +21,12 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        # SwayFX
-        - swayfx
+        # Scroll
+        - scroll
 
         # Sway ecosystem
-        - swayidle
-        - swaylock
-
-        # Terminal
-        - foot
+        #- swayidle
+        #- swaylock
 
         # SwayFX support components
         - brightnessctl
@@ -59,15 +56,5 @@ modules:
 
   - type: files
     files:
-      - source: rootfs/swayfx
-        destination: /
-
-
-  # -----------------------------------------------
-  # Foot - configuration
-  # -----------------------------------------------
-
-  - type: files
-    files:
-      - source: rootfs/foot
-        destination: /         
+      - source: rootfs/scroll
+        destination: /      
