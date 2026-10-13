@@ -1,2 +1,2 @@
 [dock]
-pinned = ["gnome-terminal", "nemo", "org.mozilla.firefox"]
+pinned = ["org.gnome.Terminal", "nemo", "org.mozilla.firefox"]
