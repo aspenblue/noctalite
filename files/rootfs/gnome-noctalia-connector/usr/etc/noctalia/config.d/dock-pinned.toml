@@ -1,2 +1,2 @@
 [dock]
-pinned = ["foot", "nautilus", "org.mozilla.firefox"]
+pinned = ["gnome-console", "nautilus", "org.mozilla.firefox"]
