@@ -10,17 +10,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - kylegospo/webapp-manager
-
-
-  # -----------------------------------------------
-  # Terra repository
-  # -----------------------------------------------
-
-  - type: dnf
-    repos:
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo        
+        - kylegospo/webapp-manager      
 
 
   # -----------------------------------------------
@@ -42,8 +32,6 @@ modules:
         - eom                           # Изображения
         - mpv                           # Видео
         # -                               # Камера
-
-        - rio
 
         # Office
         - atril                         # PDF, DJVu

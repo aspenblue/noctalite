@@ -35,7 +35,8 @@ jobs:
           - swanite-lite
           #- elderite
           - elderite-lite
-          #- lewcite
+          - lewcite
+          - lewcite-plus
           - lewcite-lite
 
     name: Build ${{ matrix.recipe }}
