@@ -14,6 +14,16 @@ modules:
 
 
   # -----------------------------------------------
+  # Terra repository
+  # -----------------------------------------------
+
+  - type: dnf
+    repos:
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo        
+
+
+  # -----------------------------------------------
   # Desktop packages
   # -----------------------------------------------
 
@@ -32,6 +42,8 @@ modules:
         - eom                           # Изображения
         - mpv                           # Видео
         # -                               # Камера
+
+        - rio
 
         # Office
         - atril                         # PDF, DJVu
