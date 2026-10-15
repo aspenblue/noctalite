@@ -33,8 +33,6 @@ jobs:
           - hyprite-lite
           #- swanite
           - swanite-lite
-          #- elderite
-          - elderite-lite
           - lewcite
           - lewcite-plus
           - lewcite-lite

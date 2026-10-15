@@ -79,5 +79,5 @@ modules:
 
   - type: files
     files:
-      - source: rootfs/mate
+      - source: rootfs/mate-hyprland-connector
         destination: /          
