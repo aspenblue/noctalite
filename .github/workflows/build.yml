@@ -27,14 +27,11 @@ jobs:
     strategy:
       matrix:
         recipe:
-          #- hyprite
+          - hyprite
           #- hyprite-basic
           #- hyprite-plus
           - hyprite-lite
-          #- swanite
-          - swanite-lite
           - lewcite
-          - lewcite-plus
           - lewcite-lite
 
     name: Build ${{ matrix.recipe }}
