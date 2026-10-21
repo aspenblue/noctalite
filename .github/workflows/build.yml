@@ -1,4 +1,4 @@
-name: Build AspenBlue Noctalite family
+name: Build
 
 on:
   push:
